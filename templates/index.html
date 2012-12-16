@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    body {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    /* custom container */
+    .container-narrow {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+    .container-narrow > hr {
+      margin: 30px 0;
+    }
+    .intro {
+        margin: 60px 0;
+        text-align: center;
+      }
+    .intro h1 {
+      font-size: 42px;
+      line-height: 1;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+       <div class="intro">
+        <h1>亲，分析下您的好友吧!</h1>
+        <p class="lead">好友可视化，地理位置分析,男女比例，学校分
+        布</p>
+        <p>
+        <a class="login"
+        href="/renrenauth"><img src="/static/img/renren_login.png"/></a>
+        </p>
+      </div>
+{% endblock %}       
